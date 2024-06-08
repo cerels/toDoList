@@ -1,0 +1,134 @@
+/* Button to create a new project */
+#create-project-button, #delete-project-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#create-project-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button to delete a selected project */
+#delete-project-button {
+    background-color: #dc3545;
+}
+
+#delete-project-button:hover {
+    background-color: #c82333;
+}
+
+/* Adjust margin for buttons */
+.project-container button {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Button to create a new todo item */
+#create-todo-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#create-todo-button:hover {
+    background-color: #218838;
+}
+
+/* Delete button within each todo item */
+.todo-item button.delete-todo {
+    float: right;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button.delete-todo:hover {
+    background-color: #c82333;
+}
+
+/* Container for the entire project section */
+.project-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label for the project selector */
+.project-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Dropdown menu styling */
+#project-selector {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+/* Project title styling */
+#project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Container for todo items */
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual todo item styling */
+.todo-item {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of each todo item */
+.todo-item strong {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Description of each todo item */
+.todo-item p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+}
